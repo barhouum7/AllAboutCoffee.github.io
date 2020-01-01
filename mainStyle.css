@@ -2,6 +2,7 @@ body {
   font-family: 'Exo 2', sans-serif;
   margin: 0 auto;
   width: 960px;
+  background-color: rgba(236,236,220,.7);
 }
 
 h1,h2,h3 {
@@ -53,4 +54,51 @@ aside {
 .photo-right {
   float: right;
   margin-left: 20px;
+}
+header {
+  background-image: url("images/coffee-beans.jpg");
+  height: 100px;
+  margin-bottom: 70px;
+}
+header h1 {
+  color: rgba(256,256,256,.8);
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 50px;
+}
+footer {
+  margin: 50px 0 0 40px;
+}
+footer nav a:link, footer nav a:visited {
+  color: gray;
+  text-decoration: none;
+  display: inline-flex;
+  width: 130px;
+  text-align: center;
+  background-color: rgba(236,236,220,.7);
+  margin-bottom: 70px;
+}
+footer nav {
+  margin-left: 50px;
+}
+
+footer nav a:hover {
+  color: black;
+}
+footer div {
+  clear: left;
+  background-color: rgba(144,126,2,.2);
+  width: 960px;
+  height: 50px;
+  margin-left: -40px;
+}
+footer div span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 18px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(144,126,2,1);
 }
