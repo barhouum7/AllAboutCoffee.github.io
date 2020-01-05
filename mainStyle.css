@@ -108,6 +108,7 @@ footer div {
   font-size: 14px;
   color: rgba(144,126,2,1);
 }
+/* Table Style Part .. */
 td, th {
   border: 1px solid black;
   height: 50px;
