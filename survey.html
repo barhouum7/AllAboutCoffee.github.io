@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Coffee Survey</title>
-<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
-<link href="mainStyle.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <title>Coffee Survey</title>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+  <link href="mainStyle.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,46 +21,69 @@
         <li><a href="survey.html">COFFEE SURVEY</a></li>
       </ul>
     </nav>
-</header>
+  </header>
+  <h1>Coffee Survey</h1>
+  <video width="640" height="360" controls poster="media/latte-poster.jpg">
+    <source src="media/latte-pour.mp4" type="video/mp4" />
+    <source src="media/latte-pour.webmhd.webm" type="video/webm" />
+    <source src="media/latte-pour.oggtheora.ogv" type="video/ogg" />
+    Your Browser Does Not Support Video PlayBack
+  </video>
+  <aside>
+    <figure>
+      <img src="images/espresso.jpg" alt="A Cup Of Espresso">
+    </figure>
+  </aside>
+  <form action="coffee-survey.php" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      Your Name <br />
+      <input type="text" name="name" required size="40" /><br />
+      Email Address<br />
+      <input type="email" name="email" required placeholder="example@example.com" size="40" /><br />
+    </fieldset>
+    <fieldset>
+      <legend>Your Coffee Preferences</legend>
+      Tell us your coffee preparation methods.<br />
+      <textarea name="preparation" cols="50" rows="5">
 
-Coffee Survey
+      </textarea><br /><br />
 
-Your Name
+      Do you grind your own beans?<br />
+      <input type="radio" name="grind" value="yes" /> yes<br />
+      <input type="radio" name="grind" value="no" /> no<br /><br />
 
-Email Address
+      How do you drink your coffee?<br />
+      <input type="checkbox" name="drink" value="sugar" /> with sugar<br />
+      <input type="checkbox" name="drink" value="cream" /> with cream<br /><br />
 
-Tell us your coffee preparation methods.
-
-Do you grind your own beans?
-yes
-no
-
-How do you drink your coffee?
-with sugar
-with cream
-
-What is your favorite coffee drink?
-
-please select a drink
-drip coffee
-french press
-espresso
-latte
-flavored
-<footer>
-  <nav>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="roasting.html">ROASTING</a></li>
-      <li><a href="grinding.html">GRINDING</a></li>
-      <li><a href="brewing.html">BREWING</a></li>
-      <li><a href="drinks.html">DRINKS</a></li>
-      <li><a href="survey.html">COFFEE SURVEY</a></li>
-    </ul>
-  </nav>
-  <div>
-    <span  class="my-signature">&COPY;2019.Made With By <a href="https://github.com/barhouum7" target="_blank">GitHub/barhouum7</a>.</span>
-  </div>
-</footer>
+      What is your favorite coffee drink? <br />
+      <select name="favorite">
+        <option value=""> please select a drink</option>
+        <option value="drip">drip coffee</option>
+        <option value="french">french press</option>
+        <option value="espresso">espresso</option>
+        <option value="latte">latte</option>
+        <option value="flavored">flavored</option>
+      </select>
+    </fieldset>
+  </form>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="roasting.html">ROASTING</a></li>
+        <li><a href="grinding.html">GRINDING</a></li>
+        <li><a href="brewing.html">BREWING</a></li>
+        <li><a href="drinks.html">DRINKS</a></li>
+        <li><a href="survey.html">COFFEE SURVEY</a></li>
+      </ul>
+    </nav>
+    <div>
+      <span class="my-signature">&COPY;2019 Made With ❤ By <a href="https://github.com/barhouum7"
+          target="_blank">GitHub/barhouum7</a>.</span>
+    </div>
+  </footer>
 </body>
+
 </html>
